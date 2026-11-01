@@ -1,0 +1,14 @@
+# Optional. LM Studio stays on the host; point LM_STUDIO_URL at host.docker.internal.
+services:
+  backend:
+    build: ./backend
+    env_file: .env
+    ports: ["8000:8000"]
+    volumes: ["./data:/app/data"]
+    extra_hosts: ["host.docker.internal:host-gateway"]
+  frontend:
+    build: ./frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000/api/v1
+    ports: ["3000:3000"]
+    depends_on: [backend]

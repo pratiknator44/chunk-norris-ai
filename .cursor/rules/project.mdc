@@ -1,0 +1,5 @@
+---
+description: DocExtract project rules
+alwaysApply: true
+---
+Read and follow `AGENTS.md` at the repo root, plus `backend/AGENTS.md` or `frontend/AGENTS.md` for the area you are editing. Architecture: `docs/ARCHITECTURE.md`. Decisions: `docs/DECISIONS.md`.
