@@ -2,6 +2,26 @@
 
 > Convert PDF to JSON via local LLM
 
+1. run an LLM in local server like LM Studio
+<img width="580" height="86" alt="image" src="https://github.com/user-attachments/assets/94cb99ad-ef8a-47a2-a7a7-76489f07b5f0" />
+
+2. upload pdf and provide a json structure
+<img width="823" height="623" alt="image" src="https://github.com/user-attachments/assets/ef51857a-ef9c-4e83-8b2b-cdae50402a4d" />
+
+3. Start and let the magic happen. Works best for 7B+ models :)
+<img width="1088" height="510" alt="image" src="https://github.com/user-attachments/assets/84c99e2e-3f43-497c-8f51-907e22e51079" />
+
+output summary:
+```
+{
+  "chapters": [
+    {
+      "chapterNo": 1,
+      "chapterName": "An Animal of No Significance",
+      "chapterSummary": "About 13.5 billion years ago, matter, energy, time and space came into being in what is known as the Big Bang. The story of these fundamental features of our universe is called physics. About 300,000 years after their appearance, matter and energy started to coalesce into complex structures, called atoms, which then combined into molecules. The story of atoms, molecules and their interactions is called chemistry. About 3.8 billion years ago, on a planet called Earth, certain molecules combined to form particularly large and intricate structures called organisms. The story of organisms is called biology. About 70,000 years ago, organisms belonging to the species Homo sapiens started to form even more elaborate structures called cultures. The subsequent development of these human cultures is called history. Three important revolutions shaped the course of history: the Cognitive Revolution kick-started history about 70,000 years ago. The Agricultural Revolution sped it up about 12,000 years ago. The Scientific Revolution, which got under way only 500 years ago, may well end history and start something completely different. This book tells the story of how these three revolutions have affected humans and their fellow organisms."
+    },...
+```
+
 Chunk Norris is a local-first document extraction engine. Upload any PDF, specify your target JSON structure (using concise TypeScript-like shape syntax or plain English), and extract validated structured JSON with zero cloud dependency—powered by Docling and your local LLM (LM Studio, Ollama, or OpenAI-compatible server).
 
 ---
