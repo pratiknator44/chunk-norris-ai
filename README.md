@@ -136,6 +136,4 @@ Define schemas using concise TypeScript-like shape syntax:
 - `POST /api/v1/jobs/{id}/retry` — Resume job execution from saved checkpoint
 
 ---
-
-<p align="center">*AI can make mistakes, kindly verify before proceeding the results*</p>
-<p align="center">*Created by github/pratiknator44*</p>
+<p align="center">Created with ❤️ by github/pratiknator44</p>
